@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Chuxi</string>
+    <string name="no_internet">No Internet</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="please_check_your_connection">Please check your connection</string>
+    <string name="try_again">Try Again</string>
+    <string name="your_location">Your Location:</string>
+    <string name="refresh">Refresh</string>
+    <string name="check_in">Check In</string>
+    <string name="_12th_jun_2022">12th Jun 2022</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="todo">TODO</string>
+    <string name="kayes_fahim">Kayes Fahim</string>
+    <string name="chief_technical_officer">Chief Technical Officer</string>
+    <string name="welcome_to_the_office">Welcome To The Office</string>
+    <string name="log_out">log Out</string>
+    <string name="start_for_today">Start For Today?</string>
+    <string name="your_about_to_late_please_leave_a_note">Your about to late, please leave a note</string>
+</resources>

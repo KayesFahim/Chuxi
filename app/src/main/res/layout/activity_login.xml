@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/logobold"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="75sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_form">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:text="Welcome"
+            android:textColor="@color/title"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/EmailTextInput"
+            android:layout_width="305dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/welcomeText"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/box"
+            android:singleLine="true"
+            android:drawableStart="@drawable/ic_acc"
+            android:hint="Enter your email"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/PasswordTextInput"
+            android:layout_width="305dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/EmailTextInput"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/box"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="Enter your password"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="205dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/PasswordTextInput"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/splash_bg"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

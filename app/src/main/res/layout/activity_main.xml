@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/gettingssection"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/geetings_box"
+            android:padding="10dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_12th_jun_2022"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/greetings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                android:text="@string/good_morning"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_menu" />
+
+        <LinearLayout
+            android:id="@+id/accountinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gettingssection"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/avatar"
+                android:contentDescription="@string/todo" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/kayes_fahim"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:text="@string/chief_technical_officer"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_below="@+id/accountinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/welcome_to_the_office"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_below="@+id/welcometext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/splash_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp" >
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/box_round"
+                    android:src="@drawable/ic_notifications" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/ball"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/box_round"
+                    android:src="@drawable/ic_alarms"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:text="2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/ball"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/start_for_today"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/checkin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/start"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/white_box"
+                    android:onClick="CheckIn"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/check_in"
+                    tools:ignore="RtlSymmetry" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="LogOut"
+        android:text="@string/log_out" />
+
+    <LinearLayout
+        android:background="@drawable/homebottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/home"/>
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/account"/>
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/group"/>
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/chat"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
