@@ -226,6 +226,7 @@ public class Attendance extends AppCompatActivity {
 
     private void CheckInAction() {
 
+        //DADA
         String url = BaseUrl+"eId="+employeeid+"&cId="+companyid+"&location="+Loaction+"&note="+note;
 
         JsonObjectRequest jsonRequest = new JsonObjectRequest
